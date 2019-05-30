@@ -10,6 +10,8 @@ public class ServicioProductoSingleton {
     
     private ArrayList<Producto> listaProductos;
     
+    
+    
     public void insertar(Producto p) {
         listaProductos.add(p);
     }
@@ -18,7 +20,11 @@ public class ServicioProductoSingleton {
         p.setPrecio(p.getPrecio()+ " - Modificado");
         return p;
     }
-    public Producto[] obtenerTodos() {
+    public Producto[] obtenerTodos() { 
+      //private ArrayList<Producto> listaProductos;
+    
+    //  listaProductos.add(Producto prod= new Producto ("Volvo", "1000"))
+      
         return (Producto[]) listaProductos.toArray();
     }
  
