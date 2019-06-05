@@ -20,12 +20,20 @@ public class ServicioProductoSingleton {
         p.setPrecio(p.getPrecio()+ " - Modificado");
         return p;
     }
-    public Producto[] obtenerTodos() { 
-      //private ArrayList<Producto> listaProductos;
-    
-    //  listaProductos.add(Producto prod= new Producto ("Volvo", "1000"))
-      
-        return (Producto[]) listaProductos.toArray();
+    public ArrayList<Producto> obtenerTodos() { 
+        
+     Producto p1= new Producto();
+     Producto p2= new Producto();
+     p1.setNombre("lapiz");
+     p1.setPrecio("3");
+     p2.setNombre("boli");
+     p2.setPrecio("5");
+    //  
+     listaProductos.add (p1);
+     listaProductos.add (p2);
+        
+        
+        return listaProductos;
     }
  
     private static ServicioProductoSingleton instancia = null;    
